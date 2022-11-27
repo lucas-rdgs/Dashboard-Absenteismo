@@ -81,14 +81,43 @@ Este projeto fornecerá um dashboard interativo construído no <i>software</i> M
 
 
 <strong>Dashboards</strong>
-- Criação de medida para cálculo do indicador absenteísmo.
+- Criação de medida para cálculo do indicador absenteísmo, pela equação apresentada anteriormente;
+- Definição de paleta de cores para os visuais.
 
 Relatórios
 1. Visão geral
+- Cartões com:
+  - A quantidade total de funcionários;
+  - A média de horas ausentes por funcionário;
+  - A taxa global de absenteísmo, ou seja, o KPI total da empresa.
+  
+ - Gráfico de rosca com as taxas de absenteísmo separadas por gênero, masculino e feminino;
+ - Gráfico de barras com o KPI por unidade de negócio (BusinessUnit), com recurso de drill down para as respectivas divisões (Division) e departamento (DepartmentName);
+ 
+ Todos os cartões, barras e colunas terão suas cores formatadas automaticamente. A cor verde indicará que o KPI está dentro da meta de <strong>3%</strong>. Quando o valor for superior à meta, será aplicada a cor vermelha.
+ 
+2. Áreas
 - 
 
-2. Funcionários
+3. Funcionários
 - 
+
+Paleta de cores<br/>
+Target:<br/>
+![#07540A](https://placehold.co/15x15/07540A/07540A.png) `#07540A` <br/>
+![#E54B4B](https://placehold.co/15x15/E54B4B/E54B4B.png) `#E54B4B`
+
+Paleta de azuis:
+
+![#03045E](https://placehold.co/15x15/03045E/03045E.png) `#03045E` <br/>
+![#023E8A](https://placehold.co/15x15/023E8A/023E8A.png) `#023E8A` <br/>
+![#0077B6](https://placehold.co/15x15/0077B6/0077B6.png) `#07540A` <br/>
+![#0096C7](https://placehold.co/15x15/0096C7/0096C7.png) `#07540A` <br/>
+![#48CAE4](https://placehold.co/15x15/48CAE4/48CAE4.png)
+![#90E0EF](https://placehold.co/15x15/90E0EF/90E0EF.png)
+![#ADE8F4](https://placehold.co/15x15/ADE8F4/ADE8F4.png)
+![#CAF0F8](https://placehold.co/15x15/CAF0F8/CAF0F8.png)
+
 
 
 #### Entrada
