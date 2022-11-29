@@ -13,6 +13,8 @@
 
 <p align="justify">Na área de Recursos Humanos não há um consenso de um resultado ideal para o indicador, já que os impactos deste indicador não são os mesmos em todas as organizações. Porém, é de ampla concordância que se busca sempre reduzir o absenteísmo em qualquer empresa.</p>
 
+<p align="justify">Assim, o objetivo deste projeto é criar um dashboard que permita analisar virtualmente as taxas de absenteísmo da empresa distribuídos por departamento, localização, gênero, além, evidentemente, da visão geral do indicador contabilizando todos os funcionários. Através de gráficos e tabelas, o usuário poderá gerar insights acionáveis sobre este importante KPI para então criar planos de ação para sua manutenção.</p>
+
 ### 1.2. Visão geral do conjunto de dados
 O conjunto de dados original contém um arquivo .csv composto por 8336 linhas e 13 colunas descritas a seguir:
 
@@ -125,8 +127,58 @@ Paleta de azuis:
 
     [https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset?resource=download](https://www.kaggle.com/datasets/HRAnalyticRepository/absenteeism-dataset?resource=download)
     
- ### 4. Insights
-<p align="justify">A análise exploratória dos dados proporciona alguns insights:</p>
+ ## 4. Análise dos relatórios
+<p align="justify">Navegando pelos relatórios pode-se analisar com mais profundidade a composição do KPI e perguntas podem ser </p>
+
+
+### 4.1 Visão Geral
+<img src="https://github.com/lucas-rdgs/Dashboard-Absenteismo/blob/main/visao_geral.png" align="center" style="width:100%"/>
+
+<p align="justify">No relatório Visão Geral, há três cartões que possuem o número total de funcionários da empresa, a média de horas ausentes de toda a empresa e, finalmente, a taxa de absenteísmo geral. Assim, os 8336 funcionários possuem, em média, 61,28 horas ausentes no ano, o que confere à empresa um absenteísmo de 3,08%. O resultado está em vermelho pois está acima da meta, ou seja, ações precisam ser tomadas para que este número diminua para dentro da meta de 3,00%.</p>
+
+<p align="justify">No gráfico de colunas, nota-se que a unidade de negócio Stores possui 3,09% de ausência, acima da meta, enquanto a unidade HeadOffice apresenta resultado positivo de 2,36% de absenteísmo. Este gráfico possui o recurso de Drill Down, que permite acessar os dados da hierarquia BusinessUnit - Division - DepartmentName. O vídeo a seguir exemplifica este recurso:</p>
+
+![](https://github.com/lucas-rdgs/Dashboard-Absenteismo/blob/main/gif_visao_geral.gif)
+
+<p align="justify">Quatro dos sete departamentos da unidade Stores fecharam o ano com o resultado acima da meta de 3,00%, quanto outros dois estão muito próximos da meta, com 2,99%, sendo pontos de atenção. O departamento Store Management fechou o KPI com 2,56%.</p>
+
+<img src="https://github.com/lucas-rdgs/Dashboard-Absenteismo/blob/main/visao_geral_stores.png" align="center" style="width:100%"/>
+
+<p align="justify">Os resultados da unidade HeadOffice serão apresentados a seguir, resumidamente:</p>
+
+| **Divisão**            | **% Absenteísmo** |
+|:-----------------------|------------------:|
+| HumanResources         |             2,73% |
+| Legal                  |             2,58% |
+| Executive              |             2,43% |
+| InfoTech               |             2,01% |
+| Finance and Accounting |             2,01% |
+
+<p align="justify">O absenteísmo é maior entre as mulheres, cujo resultado do indicador é de 3,35%, enquanto a taxa para os homens é de 2,81%.</p>
+
+<p align="justify">É possível, ainda, fazer uma análise das localidades nas quais os funcionários mais estiveram ausentes percentualmente utilizando a tabela deste relatório</p>
+
+### 4.2 Visão por Área
+<img src="https://github.com/lucas-rdgs/Dashboard-Absenteismo/blob/main/visao_por_area.png" align="center" style="width:100%"/>
+
+<p align="justify">O relatório Visão por Áreas apresenta, também, uma tabela com a %Absenteísmo por localidade, assim como um gráfico de barras com o KPI por departamento. Porém, neste relatório é possível que sejam filtradas as divisões e a função dos funcionários, além do gênero, para que possam ser feitas análises mais aprofundadas, por cada um dos gestores das divisões e dos departamentos.</p>
+
+![](https://github.com/lucas-rdgs/Dashboard-Absenteismo/blob/main/gif_visao_areas.gif)
+
+<p align="justify">Dos 21 departamentos, 7 que possuem resultados acima da meta fazem com que o resultado geral do KPI fique acima dos 3,00%, e por meio deste relatório pode-se escolher com maior assertividade os departamentos em que as ações mais rápidas devem ser tomadas.</p>
+
+<p align="justify">Destes 7 departamentos, 4 são da divisão de Stores e os outrs 3 são de responsabilidade da divisão Human Resources.</p>
+
+### 4.3 Visão Individual
+<img src="https://github.com/lucas-rdgs/Dashboard-Absenteismo/blob/main/visao_individual.png" align="center" style="width:100%"/>
+
+<p align="justify">Para um gerenciamento pais próximo dos funcionários com altas taxas de absenteísmo, o relatório Visão Individual possibilita que os gestores utilizem filtros de matrícula e nome, assim como áreas e funções, para criar ações individualizadas.</p>
+
+![](https://github.com/lucas-rdgs/Dashboard-Absenteismo/blob/main/gif_visao_individual.gif)
+
+
+ ### 5. Insights
+<p align="justify">Após a construção de gráficos e tabelas, é possível explorar os dados para gerar insights:</p>
 
 #### Insight 1: 
 <p align="justify"></p>
@@ -137,8 +189,7 @@ Paleta de azuis:
 #### Insight 3: 
 <p align="justify"></p>
 
-## 5. Resultados financeiros para o negócio
-<p align="justify"></p>
+
 
 ## 6. Conclusão
 <p align="justify"></p>
