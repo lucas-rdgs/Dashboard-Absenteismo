@@ -177,16 +177,20 @@ Paleta de azuis:
 ![](https://github.com/lucas-rdgs/Dashboard-Absenteismo/blob/main/gif_visao_individual.gif)
 
 
- ### 5. Insights
+ ## 5. Insights
 <p align="justify">Após a construção de gráficos e tabelas, é possível explorar os dados para gerar insights:</p>
 
-#### Insight 1: 
-<p align="justify"></p>
+### Insight 1: Departamentos localizados em Vancouver possuem absenteísmo menor que aqueles que possuem funcionários localizados em outras cidades
+<p align="justify">A empresa possui trabalhadores alocados em 243 cidades diferentes, e este número elevado se dá pela unidade Stores, ou seja, as lojas físicas da emrpesa. Por outro lado, os departamentos da unidade House Office trabalham apenas na cidade de Vancouver. Assim, espera-se que as horas ausentes sejam menores, proporcionalmente, quando todos os trabalhadores atuam em apenas um local.</p>
 
-#### Insight 2: 
-<p align="justify"></p>
+<p align="justify">Os departamentos da unidade House Office apresentam um absenteísmo de 2,36%, enquanto Stores tem o valor de 3,09%.</p>
 
-#### Insight 3: 
+<p align="justify">Planos de ação destinados às diversas lojas físicas devem ser coordenados para reduzir o valor do indicador nestes locais. Em menor prioridade, porém com maior facilidade de execução, ações centralizadas aos trabalhadores da cidade de Vancouver também devem ser aplicadas.</p>
+
+### Insight 2: Divisões com maior quantidade de funcionários devem possuir absenteísmo maior
+<p align="justify">Este comportamento é mais facilmente percebido na unidade Stores, que com seus 8163 funcionários corresponde a 98% do headcount. </p>
+
+### Insight 3: 
 <p align="justify"></p>
 
 
