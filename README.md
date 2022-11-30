@@ -161,6 +161,8 @@ Paleta de azuis:
 ### 4.2 Visão por Área
 <img src="https://github.com/lucas-rdgs/Dashboard-Absenteismo/blob/main/visao_por_area.png" align="center" style="width:100%"/>
 
+<p align="justify">Além do gráfico de barras com os valores totais de cada departamento, o gráfico inferior relaciona também o tamanho de cada departamento, por quantidade de funcionários. Sua análise permite um direcionamento mais efetivo das ações, já que, por exemplo, por mais que o departamento Recruitment possua o KPI em 3,16% frente a 3,08% de Bakery, este último possui 1449 funcionários, enquanto Recruitment possui apenas 14. Ações direcionadas a departamentos maiores impactam mais o indicador final global da empresa.</p>
+
 <p align="justify">O relatório Visão por Áreas apresenta, também, uma tabela com a %Absenteísmo por localidade, assim como um gráfico de barras com o KPI por departamento. Porém, neste relatório é possível que sejam filtradas as divisões e a função dos funcionários, além do gênero, para que possam ser feitas análises mais aprofundadas, por cada um dos gestores das divisões e dos departamentos.</p>
 
 ![](https://github.com/lucas-rdgs/Dashboard-Absenteismo/blob/main/gif_visao_areas.gif)
@@ -188,21 +190,38 @@ Paleta de azuis:
 <p align="justify">Planos de ação destinados às diversas lojas físicas devem ser coordenados para reduzir o valor do indicador nestes locais. Em menor prioridade, porém com maior facilidade de execução, ações centralizadas aos trabalhadores da cidade de Vancouver também devem ser aplicadas.</p>
 
 ### Insight 2: Divisões com maior quantidade de funcionários devem possuir absenteísmo maior
-<p align="justify">Este comportamento é mais facilmente percebido na unidade Stores, que com seus 8163 funcionários corresponde a 98% do headcount. </p>
+<p align="justify">Este comportamento é mais facilmente percebido na unidade Stores, que com seus 8163 funcionários corresponde a 98% do headcount. Nos departamentos restantes, a maior taxa de absenteísmo encontra-se em Human Resources, que possui o maior número de funcionários, com 2,73%.</p>
 
-### Insight 3: 
-<p align="justify"></p>
-
+### Insight 3: O absenteísmo é maior entre as mulheres
+<p align="justify">Diversos podem ser as causas para que as mulheres apresentem maiores taxas de ausências do que os homens. Porém, esta diferença é pronunciada, já que o KPI calculado apenas para as mulheres é de 3,35%, enquanto os homens apresentam 2,81%. A proporção de ambos os gêneros no quadro geral de funcionários é semelhante: 4120 funcionárias compõem 49,4% do total.</p>
 
 
 ## 6. Conclusão
-<p align="justify"></p>
+<p align="justify">Em qualquer empresa é normal que haja faltas, saídas antecipadas ou atrasos inesperados, porém as ausências têm de ser controladas e gerenciadas. Para isso, um indicador muito utilizado na área de Recursos Humanos é o absenteísmo, que calcula as horas de ausência percentuais, ou seja, quanto os funcionários estão ausentes emm relação ao tempo total esperado de trabalho. Cada organização, conhecendo seu modelo de negócio e seus resultados financeiros, pode gerar metas para as taxas de absenteísmo, sendo globais, por setor ou departamento, ou até mesmo individualmente.</p>
 
-## 8. Próximos passos
-<p align="justify"></p>
+<p align="justify">Uma ferramenta visual, com cartões, gráficos e tabelas foi desenvolvida no software Microsoft Power BI para gerenciamento das horas ausentes dos funcionários de uma empresa fictícia localizada no Canadá, com dados anuais de horas de trabalho. Nele, há 3 relatórios que proporciona diferentes níveis hierárquicos uma análise aprofundada dos números. No primeiro, os números gerais, com informações mais enxutas, são apresentadas visando que haja uma visão global da empresa, para que possam ser geradas ações para as unidades de negócio responsáveis. O segundo relatório permite que líderes de unidades de negócio, divisões e departamentos analisem os números de suas respectivas áreas. Finalmente, um último relatório possui os números descritos por funcionário, para que gestores diretos possam traçar planos individualiados ou para menor grupos de funcionários.</p>
 
-## 9. Tecnologias
+<p align="justify">Após análises dos números apresentados em formas visuais, mais rapidamente são gerados insights que podem gerar ações com o objetivo de reduzir o absenteísmo na empresa, que no final do ano dos dados fechou o KPI em 3,08%, acima da meta estipulada de 3,00%. A unidade de negócio com maiores taxas de absenteísmo são as lojas, ou Stores, que estão decentralizadas da sede administrativa da empresa, localizada em Vancouver. Nesta, departamentos com maiores quantidades de funcionários devem receber ações de redução e manutenção de absenteísmo, já que eles possuem impacto maior no cálculo.</p>
 
-## 10. Sobre o autor
+<p align="justify">Sugestões de grupos de maior prioridade para direcionamento de planos de ação e contramedidas podem, então, ser feitas a partir das análises dos relatórios:</p>
+
+| **Direcionamento**                                                                                                                           | **%Absenteísmo** | **Justificativa**                                                                        |
+|:---------------------------------------------------------------------------------------------------------------------------------------------|:-----------------:|:-------------------------------------------------------------------------------------------|
+| <p align="justify">Divisão de vendas (Stores), em ordem decrescente de prioridade: Processed Foods, Customer Service, Dairy e Bakery</p>                            |             3,09% | <p align="justify">Unidade de negócio com 98% do headcount, com 5 departamentos com resultado acima da meta</p> |
+| <p align="justify">Na sede administrativa de Vancouver, divisão de Human Resources, em ordem decrescente de prioridade: Recruitment, Training, Employee Records</p> |             3,10% | <p align="justify">Divisão com resultados negativos. 3 departamentos com resultados acima da meta</p>           |
+| <p align="justify">Ações direcionadas às mulheres</p>                                                                                                               |             3,35% | <p align="justify">49% do headcount formado por mulheres, que apresentam resultado acima da meta</p>            |
+
+
+## 7. Próximos passos
+<p align="justify">Os projetos de visualização de dados podem sempre ser aperfeiçoados à medida que as necessidades do negócio se alteram naturalmente. Neste primeiro ciclo de desenvolvimento, foram utilizadas premissas de jornadas de trabalho iguais a todos os funcionários, dias de férias e folgar por feriados. Para aperfeiçoar o projeto, podem ser levadas em conta outros regimes de trabalho depedendo da localidade do trabalhador, seu departamento ou nível hierárquico.</p>
+
+<p align="justify">Um ponto importante que pode ser levado em conta é a determinação de metas diferentes para departamentos ou níveis hierárquicos diferentes. Áreas em que há um grande número de funcionários impacta o número global da empresa em proporções diferentes, e uma meta mais agressiva pode ser adotada. Outra estratégia comumente utilizada é a definição de metas diferentes ao longo do ano, para que o resultado final anual seja alcançado de maneira menos desafiadora.</p>
+
+<p align="justify">Em relação aos artifícios visuais utilizados nos relatórios, é natural que haja alterações dependendo dos objetivos dos gestores no manejo do indicador, com o momento da empresa ou com as informações necessários. Sempre se deve manter em mente que um ambiente de trabalho saudável a comunicação é vital para que as expectativas sejam setadas com sucesso e que os objetivos sejam alcançados de maneira rápida e eficiente. Dito isto, os usuários finais podem sugerir alterações aos relatórios apresentados e cabe ao responsável pelo dashboard analisar a viabilidade e tempo de execução.</p>
+
+## 8. Tecnologias
+[<img src="https://logos-world.net/wp-content/uploads/2022/02/Microsoft-Power-BI-Symbol.png" style="height: 50px" align="left"/>](https://powerbi.microsoft.com/pt-br/)<br/><br/>
+
+## 9. Sobre o autor
 Olá! Meu nome é Lucas Rodrigues.<br/>
 Conecte-se comigo no meu [Linkedin](https://www.linkedin.com/in/lucasrodrigues3/).
