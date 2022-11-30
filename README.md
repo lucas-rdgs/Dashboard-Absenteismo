@@ -15,7 +15,7 @@
 
 <p align="justify">Assim, o objetivo deste projeto é criar um dashboard que permita analisar virtualmente as taxas de absenteísmo da empresa distribuídos por departamento, localização, gênero, além, evidentemente, da visão geral do indicador contabilizando todos os funcionários. Através de gráficos e tabelas, o usuário poderá gerar insights acionáveis sobre este importante KPI para então criar planos de ação para sua manutenção.</p>
 
-### 1.2. Visão geral do conjunto de dados
+### 1.1. Visão geral do conjunto de dados
 O conjunto de dados original contém um arquivo .csv composto por 8336 linhas e 13 colunas descritas a seguir:
 
 | **Coluna**     | **Descrição**                                      |
@@ -55,72 +55,84 @@ Para a realização deste dashboard, serão levadas em conta algumas premissas:
 
 
 ## 3. Planejamento da solução
-### 3.1 O método SAPE (Saída - Processo - Entrada)
+### 3.1. O método SAPE (Saída - Processo - Entrada)
 #### Saída (Produto final)
 Este projeto fornecerá um dashboard interativo construído no <i>software</i> Microsoft Power BI, contendo dois relatórios:
+
 - Visão geral: contendo o resultado do indicador tanto para o panorama geral da empresa quanto para cada função, departamento, divisão e localidade;
 - Visão por funcionário: contendo a ausência de cada funcionário para gerenciamento individual, através de navegação por filtros de função, departamento, divisão e localidade.
 
 #### Processo (Passo-a-passo)
-<strong>ETL</strong>
-1. Extração de dados:
+<strong>ETL</strong><br/>
+<strong>1. Extração de dados:</strong>
 - Download do conjunto de dados no portal do Kaggle;
 - Carregamento do arquivo "MFGEmployees4.csv" no Power BI;
+<br/>
 
-2. Tratamento de dados
-2.1. Tratamento inicial
+<strong>2. Tratamento de dados</strong><br/>
+<b>2.1. Tratamento inicial</b>
 - Análise inicial das tabelas, entendimento de seus conteúdos;
 - Conferência do tipo de dados de cada coluna e alteração, caso necessário;
 - Conferência de dados faltantes e tratamento, caso necessário;
 - Conferência de dados inválidos ou incorretos e tratamento, caso necessário;
+<br/>
 
-2.2. Feature Engineering
+<b>2.2. Feature Engineering</b>
 - Criação da coluna FullName, com a concatenação das colunas GivenName e Surname, com o nome completo de cada funcionário;
-- Criação da coluna TotalHours, com a quantidade total de horas de trabalho de cada funcionário, após desconto dos feriados descritos na seção <strong>2. Premissas do negócio</strong>, totalizando 1992 horas anuais;
+- Criação da coluna TotalHours, com a quantidade total de horas de trabalho de cada funcionário, após desconto dos feriados descritos na seção <b>2. Premissas do negócio</b>, totalizando 1992 horas anuais;
+<br/>
 
-3. Carregamento
+<strong>3. Carregamento</strong>
 - Aplicação das modificações na tabela original, para a criação de medidas, gráficos, cartões e filtros nos relatórios do dashboard.
-
+<br/>
 
 <strong>Dashboards</strong>
 - Criação de medida para cálculo do indicador absenteísmo, pela equação apresentada anteriormente;
 - Definição de paleta de cores para os visuais.
 
-Relatórios
-1. Visão geral
+<br/>
+<strong>Relatórios</strong><br/>
+
+<b>1. Visão geral</b>
 - Cartões com:
   - A quantidade total de funcionários;
   - A média de horas ausentes por funcionário;
+  - A taxa de absenteísmo por gênero;
   - A taxa global de absenteísmo, ou seja, o KPI total da empresa.
+
+- Gráfico de colunas com o KPI por unidade de negócio (BusinessUnit), com recurso de drill down para as respectivas divisões (Division) e departamentos (DepartmentName);
+- Tabela com o KPI por cidade;
+- Botões de navegação para os outros relatórios.
+
+<p align="justify">Todos os cartões, barras e colunas terão suas cores formatadas automaticamente. A cor verde indicará que o KPI está dentro da meta de <strong>3,00%</strong>. Quando o valor for superior à meta, será aplicada a cor vermelha.</p>
+ 
+<b>2. Áreas</b>
+- Cartões com:
+  - A quantidade total de funcionários;
+  - A média de horas ausentes por funcionário;
+  - A taxa de absenteísmo por gênero;
+  - A taxa global de absenteísmo, ou seja, o KPI total da empresa.
+
+- Filtros de:
+  - Divisão;
+  - Função do empregado;
+  - Gênero.
+
+- Gráfico de barras com o KPI por departamentos (DepartmentName);
+- Gráfico de dispersão com o KPI por tamanho do departamento;
+- Tabela com o KPI por cidade;
+
+
+<b>3. Funcionários</b>
+- Tabela com o KPI para cada funcionário, com informações de matrícula, nome completo, função, divisão, departamento, quantidade de horas ausentes e taxa de absenteísmo.
+
+- Caixas de busca por: matrícula e nome completo.
+
+- Filtros de:
+  - Área de trabalho: unidade de negócio, divisão e departamento;
+  - Funcão.
   
- - Gráfico de rosca com as taxas de absenteísmo separadas por gênero, masculino e feminino;
- - Gráfico de barras com o KPI por unidade de negócio (BusinessUnit), com recurso de drill down para as respectivas divisões (Division) e departamento (DepartmentName);
- 
- Todos os cartões, barras e colunas terão suas cores formatadas automaticamente. A cor verde indicará que o KPI está dentro da meta de <strong>3%</strong>. Quando o valor for superior à meta, será aplicada a cor vermelha.
- 
-2. Áreas
-- 
-
-3. Funcionários
-- 
-
-Paleta de cores<br/>
-Target:<br/>
-![#07540A](https://placehold.co/15x15/07540A/07540A.png) `#07540A` <br/>
-![#E54B4B](https://placehold.co/15x15/E54B4B/E54B4B.png) `#E54B4B`
-
-Paleta de azuis:
-
-![#03045E](https://placehold.co/15x15/03045E/03045E.png) `#03045E` <br/>
-![#023E8A](https://placehold.co/15x15/023E8A/023E8A.png) `#023E8A` <br/>
-![#0077B6](https://placehold.co/15x15/0077B6/0077B6.png) `#07540A` <br/>
-![#0096C7](https://placehold.co/15x15/0096C7/0096C7.png) `#07540A` <br/>
-![#48CAE4](https://placehold.co/15x15/48CAE4/48CAE4.png)
-![#90E0EF](https://placehold.co/15x15/90E0EF/90E0EF.png)
-![#ADE8F4](https://placehold.co/15x15/ADE8F4/ADE8F4.png)
-![#CAF0F8](https://placehold.co/15x15/CAF0F8/CAF0F8.png)
-
-
+- Botões de navegação para os outros relatórios.
 
 #### Entrada
 - Os dados deste projeto foram retirados do portal Kaggle e estão disponíveis no link:
@@ -131,7 +143,7 @@ Paleta de azuis:
 <p align="justify">Navegando pelos relatórios pode-se analisar com mais profundidade a composição do KPI e perguntas podem ser </p>
 
 
-### 4.1 Visão Geral
+### 4.1. Visão Geral
 <img src="https://github.com/lucas-rdgs/Dashboard-Absenteismo/blob/main/visao_geral.png" align="center" style="width:100%"/>
 
 <p align="justify">No relatório Visão Geral, há três cartões que possuem o número total de funcionários da empresa, a média de horas ausentes de toda a empresa e, finalmente, a taxa de absenteísmo geral. Assim, os 8336 funcionários possuem, em média, 61,28 horas ausentes no ano, o que confere à empresa um absenteísmo de 3,08%. O resultado está em vermelho pois está acima da meta, ou seja, ações precisam ser tomadas para que este número diminua para dentro da meta de 3,00%.</p>
@@ -158,7 +170,7 @@ Paleta de azuis:
 
 <p align="justify">É possível, ainda, fazer uma análise das localidades nas quais os funcionários mais estiveram ausentes percentualmente utilizando a tabela deste relatório</p>
 
-### 4.2 Visão por Área
+### 4.2. Visão por Área
 <img src="https://github.com/lucas-rdgs/Dashboard-Absenteismo/blob/main/visao_por_area.png" align="center" style="width:100%"/>
 
 <p align="justify">Além do gráfico de barras com os valores totais de cada departamento, o gráfico inferior relaciona também o tamanho de cada departamento, por quantidade de funcionários. Sua análise permite um direcionamento mais efetivo das ações, já que, por exemplo, por mais que o departamento Recruitment possua o KPI em 3,16% frente a 3,08% de Bakery, este último possui 1449 funcionários, enquanto Recruitment possui apenas 14. Ações direcionadas a departamentos maiores impactam mais o indicador final global da empresa.</p>
@@ -171,7 +183,7 @@ Paleta de azuis:
 
 <p align="justify">Destes 7 departamentos, 4 são da divisão de Stores e os outrs 3 são de responsabilidade da divisão Human Resources.</p>
 
-### 4.3 Visão Individual
+### 4.3. Visão Individual
 <img src="https://github.com/lucas-rdgs/Dashboard-Absenteismo/blob/main/visao_individual.png" align="center" style="width:100%"/>
 
 <p align="justify">Para um gerenciamento pais próximo dos funcionários com altas taxas de absenteísmo, o relatório Visão Individual possibilita que os gestores utilizem filtros de matrícula e nome, assim como áreas e funções, para criar ações individualizadas.</p>
