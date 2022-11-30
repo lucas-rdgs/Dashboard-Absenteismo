@@ -43,7 +43,7 @@ Para a realização deste dashboard, serão levadas em conta algumas premissas:
 - Serão desconsiderados, ainda, 11 dias de trabalho de todos os funcionários, referentes aos feriados de:
   - Ano novo: 1 dia
   - Sexta-feira Santa: 1 dia
-  - Tirandentes: 1 dia
+  - Tiradentes: 1 dia
   - Dia do Trabalho: 1 dia
   - Dia da Independência do Brasil: 1 dia
   - Dia de Nossa Senhora Aparecida: 1 dia
@@ -130,7 +130,7 @@ Este projeto fornecerá um dashboard interativo construído no <i>software</i> M
 
 - Filtros de:
   - Área de trabalho: unidade de negócio, divisão e departamento;
-  - Funcão.
+  - Função.
   
 - Botões de navegação para os outros relatórios.
 
@@ -186,7 +186,7 @@ Este projeto fornecerá um dashboard interativo construído no <i>software</i> M
 ### 4.3. Visão Individual
 <img src="https://github.com/lucas-rdgs/Dashboard-Absenteismo/blob/main/visao_individual.png" align="center" style="width:100%"/>
 
-<p align="justify">Para um gerenciamento pais próximo dos funcionários com altas taxas de absenteísmo, o relatório Visão Individual possibilita que os gestores utilizem filtros de matrícula e nome, assim como áreas e funções, para criar ações individualizadas.</p>
+<p align="justify">Para um gerenciamento mais próximo dos funcionários com altas taxas de absenteísmo, o relatório Visão Individual possibilita que os gestores utilizem filtros de matrícula e nome, assim como áreas e funções, para criar ações individualizadas.</p>
 
 ![](https://github.com/lucas-rdgs/Dashboard-Absenteismo/blob/main/gif_visao_individual.gif)
 
@@ -195,7 +195,7 @@ Este projeto fornecerá um dashboard interativo construído no <i>software</i> M
 <p align="justify">Após a construção de gráficos e tabelas, é possível explorar os dados para gerar insights:</p>
 
 ### Insight 1: Departamentos localizados em Vancouver possuem absenteísmo menor que aqueles que possuem funcionários localizados em outras cidades
-<p align="justify">A empresa possui trabalhadores alocados em 243 cidades diferentes, e este número elevado se dá pela unidade Stores, ou seja, as lojas físicas da emrpesa. Por outro lado, os departamentos da unidade House Office trabalham apenas na cidade de Vancouver. Assim, espera-se que as horas ausentes sejam menores, proporcionalmente, quando todos os trabalhadores atuam em apenas um local.</p>
+<p align="justify">A empresa possui trabalhadores alocados em 243 cidades diferentes, e este número elevado se dá pela unidade Stores, ou seja, as lojas físicas da empresa. Por outro lado, os departamentos da unidade House Office trabalham apenas na cidade de Vancouver. Assim, espera-se que as horas ausentes sejam menores, proporcionalmente, quando todos os trabalhadores atuam em apenas um local.</p>
 
 <p align="justify">Os departamentos da unidade House Office apresentam um absenteísmo de 2,36%, enquanto Stores tem o valor de 3,09%.</p>
 
@@ -209,9 +209,9 @@ Este projeto fornecerá um dashboard interativo construído no <i>software</i> M
 
 
 ## 6. Conclusão
-<p align="justify">Em qualquer empresa é normal que haja faltas, saídas antecipadas ou atrasos inesperados, porém as ausências têm de ser controladas e gerenciadas. Para isso, um indicador muito utilizado na área de Recursos Humanos é o absenteísmo, que calcula as horas de ausência percentuais, ou seja, quanto os funcionários estão ausentes emm relação ao tempo total esperado de trabalho. Cada organização, conhecendo seu modelo de negócio e seus resultados financeiros, pode gerar metas para as taxas de absenteísmo, sendo globais, por setor ou departamento, ou até mesmo individualmente.</p>
+<p align="justify">Em qualquer empresa é normal que haja faltas, saídas antecipadas ou atrasos inesperados, porém as ausências têm de ser controladas e gerenciadas. Para isso, um indicador muito utilizado na área de Recursos Humanos é o absenteísmo, que calcula as horas de ausência percentuais, ou seja, quanto os funcionários estão ausentes em relação ao tempo total esperado de trabalho. Cada organização, conhecendo seu modelo de negócio e seus resultados financeiros, pode gerar metas para as taxas de absenteísmo, sendo globais, por setor ou departamento, ou até mesmo individualmente.</p>
 
-<p align="justify">Uma ferramenta visual, com cartões, gráficos e tabelas foi desenvolvida no software Microsoft Power BI para gerenciamento das horas ausentes dos funcionários de uma empresa fictícia localizada no Canadá, com dados anuais de horas de trabalho. Nele, há 3 relatórios que proporciona diferentes níveis hierárquicos uma análise aprofundada dos números. No primeiro, os números gerais, com informações mais enxutas, são apresentadas visando que haja uma visão global da empresa, para que possam ser geradas ações para as unidades de negócio responsáveis. O segundo relatório permite que líderes de unidades de negócio, divisões e departamentos analisem os números de suas respectivas áreas. Finalmente, um último relatório possui os números descritos por funcionário, para que gestores diretos possam traçar planos individualiados ou para menor grupos de funcionários.</p>
+<p align="justify">Uma ferramenta visual, com cartões, gráficos e tabelas foi desenvolvida no software Microsoft Power BI para gerenciamento das horas ausentes dos funcionários de uma empresa fictícia localizada no Canadá, com dados anuais de horas de trabalho. Nele, há 3 relatórios que proporciona diferentes níveis hierárquicos uma análise aprofundada dos números. No primeiro, os números gerais, com informações mais enxutas, são apresentados visando que haja uma visão global da empresa, para que possam ser geradas ações para as unidades de negócio responsáveis. O segundo relatório permite que líderes de unidades de negócio, divisões e departamentos analisem os números de suas respectivas áreas. Finalmente, um último relatório possui os números descritos por funcionário, para que gestores diretos possam traçar planos individualizados ou para menor grupos de funcionários.</p>
 
 <p align="justify">Após análises dos números apresentados em formas visuais, mais rapidamente são gerados insights que podem gerar ações com o objetivo de reduzir o absenteísmo na empresa, que no final do ano dos dados fechou o KPI em 3,08%, acima da meta estipulada de 3,00%. A unidade de negócio com maiores taxas de absenteísmo são as lojas, ou Stores, que estão decentralizadas da sede administrativa da empresa, localizada em Vancouver. Nesta, departamentos com maiores quantidades de funcionários devem receber ações de redução e manutenção de absenteísmo, já que eles possuem impacto maior no cálculo.</p>
 
@@ -225,7 +225,7 @@ Este projeto fornecerá um dashboard interativo construído no <i>software</i> M
 
 
 ## 7. Próximos passos
-<p align="justify">Os projetos de visualização de dados podem sempre ser aperfeiçoados à medida que as necessidades do negócio se alteram naturalmente. Neste primeiro ciclo de desenvolvimento, foram utilizadas premissas de jornadas de trabalho iguais a todos os funcionários, dias de férias e folgar por feriados. Para aperfeiçoar o projeto, podem ser levadas em conta outros regimes de trabalho depedendo da localidade do trabalhador, seu departamento ou nível hierárquico.</p>
+<p align="justify">Os projetos de visualização de dados podem sempre ser aperfeiçoados à medida que as necessidades do negócio se alteram naturalmente. Neste primeiro ciclo de desenvolvimento, foram utilizadas premissas de jornadas de trabalho iguais a todos os funcionários, dias de férias e folgar por feriados. Para aperfeiçoar o projeto, podem ser levadas em conta outros regimes de trabalho dependendo da localidade do trabalhador, seu departamento ou nível hierárquico.</p>
 
 <p align="justify">Um ponto importante que pode ser levado em conta é a determinação de metas diferentes para departamentos ou níveis hierárquicos diferentes. Áreas em que há um grande número de funcionários impacta o número global da empresa em proporções diferentes, e uma meta mais agressiva pode ser adotada. Outra estratégia comumente utilizada é a definição de metas diferentes ao longo do ano, para que o resultado final anual seja alcançado de maneira menos desafiadora.</p>
 
